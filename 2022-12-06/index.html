@@ -159,29 +159,20 @@
         //Penktoji užduotis
 
 
-        // Pirmas sprendimo variantas
         let resultx = '';
         let resultLast = '';
 
-        for (let i = 0; i < 3000; i += 77) {
-            resultLast = i;
-            resultx += i + ', ';
+        i = 0;
+
+        while (i < 3000 - 77) {
+            resultLast = i
+            i += 77
+            resultx += resultLast + ', ';
         }
 
-        document.write(resultx + resultLast, '</br>')
 
-        //Antras sprendimo variantas
-        let resultx2 = '';
-        let resultLast2 = '';
+        document.write(resultx, i, '</br>');
 
-        for (let i = 0; i < 3000; i++) {
-            if (i % 77 === 0) {
-                resultLast2 = i
-                resultx2 += i + ', ';
-            }
-        }
-
-        document.write(resultx2 + resultLast2)
 
 
     </script>
