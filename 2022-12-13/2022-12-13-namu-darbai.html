@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2022-12-12 Namų darbai</title>
+    <title>2022-12-13 Namų darbai</title>
 </head>
 <body>
     <script>
@@ -50,7 +50,6 @@ let surname = 'grigorovič';
 document.write(nameSurname(name, surname));
 
 // Ketvirtoji užduotis
-document.write('<h2>Ketvirtoji užduotis</h2>');
 
 const randomGenerator = (index) => {
     let result = [];
@@ -61,6 +60,24 @@ const randomGenerator = (index) => {
 }
 
 randomGenerator(3);
+
+// Penktoji užduotis
+document.write('<h2>Penktoji užduotis</h2>');
+
+const arrayGenerator = (from, to, limit) => {
+    let result = [];
+    if (typeof from === 'number' && typeof to === 'number' && typeof limit === 'number') {
+        for (let i = 0; i < limit; i++) {
+        result.push(rand(from, to));
+        }
+    } else result.push('error')
+    return result;
+}
+
+result = arrayGenerator(1, 15, 10);
+
+console.log(result);
+document.write(result);
 
     </script>
 </body>
